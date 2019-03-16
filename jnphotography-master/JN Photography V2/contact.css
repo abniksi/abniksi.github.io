@@ -180,7 +180,10 @@ label{
   background-color: white;
 }
 
-a {text-decoration: none}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
 a:visited {text-decoration: none;
 color: black;}
 
