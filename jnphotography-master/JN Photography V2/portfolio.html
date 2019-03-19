@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Meta tags for SEO. -->
     <meta charset="utf-8">
+    <!-- Viewport allows for website to take shape based on users device. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JN Photography</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <meta name="description" content="Braden Niksich is a hobbyist photographer that wants to share his photos with the world.">
+    <title>BN Photography</title>
+    <!-- Linking stylesheets. -->
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link rel="icon"  type="image/ico" href="images/photo.ico"/>
+    <!-- jQuery for lightbox. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   </head>
   <body>
+    <!-- Navbar section. -->
     <div class="navbar">
       <div class="navbarLink navbarLink-brand">
-        <p id="mainTitle"><i class="fas fa-camera-retro"></i><a href="index.html">JN Photography</a></p>
+        <p id="mainTitle"><i class="fas fa-camera-retro"></i><a href="index.html">BN Photography</a></p>
       </div>
       <div class="navbarLink navbarLink-toggle">
         <i class="fas fa-bars"></i>
       </div>
       <nav class="navbarItems navbarItems-right">
-        <div class="navbarLink">
+        <div class="navbarLink mobileNav">
           <a class="navHover" href="aboutme.html">About Me</a>
         </div>
-        <div class="navbarLink">
+        <div class="navbarLink mobileNav">
           <a class="navHover" href="portfolio.html">Portfolio</a>
-        </div>
-        <div class="navbarLink">
-          <a class="navHover" href="contact.html">Contact</a>
         </div>
       </nav>
     </div>
+
+    <!-- Main section of portfolio page. -->
     <div id="main">
       <div class="portfolioHeading">
         <h1>Portfolio</h1>
         <p>Welcome to my full portfolio.</p>
       </div>
+      <!-- Gallary of images. Used CSS grid to layout all of these. -->
         <div id="gallary">
-          <img id="pic1" src="https://picsum.photos/200/300/?random">
-          <img id="pic2" src="https://picsum.photos/200/300/?random">
-          <img id="pic3" src="https://picsum.photos/200/300/?random">
-          <img id="pic4" src="https://picsum.photos/200/300/?random">
-          <img id="pic5" src="https://picsum.photos/200/300/?random">
-          <img id="pic6" src="https://picsum.photos/200/300/?random">
-          <img id="pic7" src="https://picsum.photos/200/300/?random">
-          <img id="pic8" src="https://picsum.photos/200/300/?random">
-          <img id="pic9" src="https://picsum.photos/200/300/?random">
-          <img id="pic10" src="https://picsum.photos/200/300/?random">
-          <img id="pic11" src="https://picsum.photos/200/300/?random">
-          <img id="pic12" src="https://picsum.photos/200/300/?random">
-          <img id="pic13" src="https://picsum.photos/200/300/?random">
-          <img id="pic14" src="https://picsum.photos/200/300/?random">
-          <img id="pic15" src="https://picsum.photos/200/300/?random">
-          <img id="pic16" src="https://picsum.photos/200/300/?random">
+          <a id="pic1" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic2" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic3" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic4" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic5" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic6" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic7" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic8" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic9" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic10" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic11" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic12" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic13" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic14" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic15" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
+          <a id="pic16" href="https://picsum.photos/3840/2160/?random" data-lightbox="image-1" data-title="My caption"><img src="https://picsum.photos/3840/2160/?random"></a>
         </div>
+
+      <!-- Same footer as the other pages. -->
       <div id="footer">
         <div id="footerText">
           <h3>Connect With Me</h3>
         </div>
         <div id="icons">
           <ul>
+            <!-- Font awesome icons. Used unordered list and then display inline-block. -->
             <li><i class="fab fa-facebook"></i></li>
             <li><i class="fab fa-instagram"></i></li>
             <li><i class="fab fa-twitter"></i></li>
@@ -65,10 +76,12 @@
           </ul>
         </div>
         <div id="copyright">
-          <p>Copyright &copy; 2019 JN Photography Inc. All rights reserved.</p>
+          <p>Copyright &copy; 2019 BN Photography Inc. All rights reserved.</p>
         </div>
       </div>
     </div>
+    <!-- Linking my javascript files to HTML. -->
+    <script src="javascript/lightbox.js"></script>
+    <script type="text/javascript" src="javascript/bnphotgraphy.js"></script>
   </body>
-    <script type="text/javascript" src="jnphotgraphy.js"></script>
 </html>

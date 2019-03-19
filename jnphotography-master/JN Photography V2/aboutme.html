@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Meta tags for SEO. -->
     <meta charset="utf-8">
+    <!-- Viewport allows for website to take shape based on users device. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JN Photography</title>
-    <link rel="stylesheet" href="about.css">
+    <meta name="description" content="Braden Niksich is a hobbyist photographer that wants to share his photos with the world.">
+    <title>BN Photography</title>
+    <!-- Linking stylesheets. -->
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon"  type="image/ico" href="images/photo.ico"/>
   </head>
   <body>
+    <!-- Navbar section. -->
     <div class="navbar">
       <div class="navbarLink navbarLink-brand">
-        <p id="mainTitle"><i class="fas fa-camera-retro"></i><a href="index.html">JN Photography</a></p>
+        <p id="mainTitle"><i class="fas fa-camera-retro"></i><a href="index.html">BN Photography</a></p>
       </div>
       <div class="navbarLink navbarLink-toggle">
         <i class="fas fa-bars"></i>
       </div>
       <nav class="navbarItems navbarItems-right">
-        <div class="navbarLink">
+        <div class="navbarLink mobileNav">
           <a class="navHover" href="aboutme.html">About Me</a>
         </div>
-        <div class="navbarLink">
+        <div class="navbarLink mobileNav">
           <a class="navHover" href="portfolio.html">Portfolio</a>
-        </div>
-        <div class="navbarLink">
-          <a class="navHover" href="contact.html">Contact</a>
         </div>
       </nav>
     </div>
+
+    <!-- Main section of page. -->
     <div class="aboutMe">
-      <div class="joshImage">
-        <img src="images/josh.jpg" alt="">
+      <!-- Image section. -->
+      <div class="bradenImage">
+        <img src="images/braden.jpg" alt="">
       </div>
+      <!-- Div section where all the page's text is located. -->
       <div class="textArea">
-        <h1>Hi! I’m Joshua Novak. Creative Photographer.</h1>
-        <p>I'm a professional Photographer from Hobart, Indiana. Over 20 years of combined experience, and know a thing or two about photography and composition. Clever use of technology and lean processes enable us to work faster and smarter.</p>
-        <p>I use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+        <h1>Hi! I’m Braden Niksich. Hobbyist Photographer.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
+
+    <!-- Same basic footer as the other pages. -->
     <div id="footer">
       <div id="footerText">
         <h3>Connect With Me</h3>
@@ -52,9 +60,10 @@
         </ul>
       </div>
       <div id="copyright">
-        <p>Copyright &copy; 2019 JN Photography Inc. All rights reserved.</p>
+        <p>Copyright &copy; 2019 BN Photography Inc. All rights reserved.</p>
       </div>
     </div>
   </body>
-  <script type="text/javascript" src="jnphotgraphy.js"></script>
+  <!-- Linking javascript for the navbar. -->
+  <script type="text/javascript" src="javascript/bnphotgraphy.js"></script>
 </html>

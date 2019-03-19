@@ -1,12 +1,16 @@
-# jnphotography
-Photography website built for a friend.
+# bnphotography
+Mockup photography website built without BootStrap.
 
 Responsive website designed without any frameworks. 
 
-Tried using jQuery lightbox so user could click on the photos and see full image. Light box was messing up the CSS grid layout I was using so I scrapped it. Currently looking into how to solve this problem.
+Recently revamped the entire website and fixed multiple issues with it. Got jQuery lightbox to
+work with CSS grid. The problem was fixed be switching the ID selector from the <img> element to
+the <a> element. Very simple fix and now lightbox works properly with CSS grid.
 
 Used CSS grid for the layout of the images. Flexbox used in about me page. 
 
 JavaScript used to make mobile navbar. Working to add more JavaScript elements to the website. 
+Trying to make the navbar much better. Mobile navbar is the only thing I am not happy with 
+currently with this project.
 
 Any bugs or recommendations for me? Let me know!

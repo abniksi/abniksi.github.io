@@ -1,38 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-.form-box {
-  max-width: 500px;
-  margin: auto;
-  padding: 50px;
-}
-
-.form-box p {
-  text-align: center;
-  padding: 20px;
-}
-
-.form-box h1 {
-  text-align: center;
-  padding: 20px;
-}
-
-textarea{
-  height: 100px;
-}
-
-h1{
-  font-family: 'Playfair Display', serif;
-}
-
-p{
-  font-family: 'Indie Flower', cursive;
-}
-
-input, textarea {
-  width: 100%;
-}
-
 * {
   margin: 0 auto;
 }
@@ -45,13 +13,14 @@ input, textarea {
   color: black;
 }
 
-.navbarLink {
-  padding-right: 8px;
-  color: black;
+.navHover {
+  transition: 1s ease;
+  padding: 8px;
 }
 
 .navHover:hover{
-  border-bottom: 1px solid black;
+  background-color: rgba(0,0,0);
+  color: white;
 }
 
 #mainTitle{
@@ -101,6 +70,15 @@ input, textarea {
     grid-gap: 5px;
 }
 
+#gallary img{
+  transition: 1s ease;
+}
+
+#gallary img:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -111,39 +89,39 @@ img {
     cursor: pointer;
 }
 
-label{
-  font-family: 'Playfair Display', serif;
-}
-
+/* Selector for the icons. Adding some border and spacing. */
 .fab{
   border: 1px solid black;
-  border-radius: 50px;
+  border-radius: 15px;
   font-size: 20px;
   padding: 15px;
+  transition: 1s ease;
 }
 
+/* When you hover on the items, the color changes and it scales them up. */
 .fab:hover{
-  background-color: #f6f6f6;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .fa-facebook:hover{
-  color:#3b5998;
+  background-color:#3b5998;
 }
 
 .fa-youtube:hover{
-  color: #FF0000;
+  background-color: #FF0000;
 }
 
 .fa-snapchat:hover{
-  color: #FFFC00;
+  background-color: #FFFC00;
 }
 
 .fa-twitter:hover{
-  color: #0084b4;
+  background-color: #0084b4;
 }
 
 .fa-instagram:hover{
-  color: pink;
+  background-color: pink;
 }
 
 #icons li{
@@ -180,12 +158,15 @@ label{
   background-color: white;
 }
 
-.navbar a {
+a {
   text-decoration: none;
   color: black;
 }
-a:visited {text-decoration: none;
-color: black;}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 
 @media only screen and (max-width: 768px) {
   .navbarItems,
@@ -195,9 +176,7 @@ color: black;}
 .navbarItems {
     display:none;
   }
-.navbarItems-right {
-    margin-left:0;
-  }
+
 .navbarToggleShow {
     display: flex;
   }
@@ -207,4 +186,23 @@ color: black;}
     position: absolute;
     cursor: pointer;
    }
- }
+   
+   .mobileNav{
+     margin: 10px;
+     text-align: center;
+   }
+
+   #gallary {
+       margin-left: auto;
+       margin-right: auto;
+       display: flex;
+       flex-direction: column;
+       width: 80%;
+   }
+
+   #gallary img{
+     height: 400px;
+     margin-bottom: 20px;
+   }
+
+}

@@ -1,10 +1,13 @@
+/* Importing Google fonts to use in my code. */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+/* Setting the margin for the entire HTML document. */
 *{
   margin: 0 auto;
 }
 
+/* Creating the navbar. */
 .navbar {
   background-color: white;
   display: flex;
@@ -13,33 +16,39 @@
   color: black;
 }
 
-.navbarLink {
-  padding-right: 8px;
-  color: black;
+.navHover {
+  transition: 1s ease;
+  padding: 8px;
+}
+
+.navHover:hover{
+  background-color: rgba(0,0,0);
+  color: white;
+}
+
+.navbarItems {
+  display: flex;
+}
+
+.navbarItems-right {
+  margin-left:auto;
+}
+
+/* For transitioning navbar from desktop to mobile view. */
+.navbarLink-toggle {
+  display: none;
 }
 
 #mainTitle{
   font-family: 'Indie Flower', cursive;
 }
 
+/* Giving padding to the camera icon to give make the logo. */
 .fas{
   padding-right: 5px;
 }
 
-.navHover:hover{
-  border-bottom: 1px solid black;
-}
-
-.navbarItems {
-  display: flex;
-}
-.navbarItems-right {
-  margin-left:auto;
-}
-.navbarLink-toggle {
-  display: none;
-}
-
+/* Setting the width and height to be 100% for the mainWork section. */
 #mainWork{
   width: 100%;
   height: 100%;
@@ -49,6 +58,7 @@
   font-family: 'Playfair Display', serif;
 }
 
+/* Fixing spacing with my text.  */
 #headings{
   padding: 20%;
   width: 50%;
@@ -63,22 +73,17 @@
   font-family: 'Indie Flower', cursive;
 }
 
-#photos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px 300px 300px;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-}
-
+/* Making the images black and white and setting a transition. */
 #photos img{
   filter: grayscale(100%);
   transition: 1s ease;
 }
 
+/* When you hover, pictures become colorful and then are scaled up. */
 #photos img:hover{
   filter: grayscale(0);
   transform: scale(1.01);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 #photos a{
@@ -86,9 +91,21 @@
   clear: both;
 }
 
-#pic1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+/* CSS grid beginning. */
+#photos {
+    display: grid;
+    /* Sets three rows and repeats it. */
+    grid-template-columns: repeat(3, 1fr);
+    /* How big the rows are. */
+    grid-template-rows: 300px 300px 300px;
+    /* Setting some spacing between the rows and columns. */
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+#pic2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 #pic3 {
@@ -97,49 +114,60 @@
 }
 #pic4 {
     grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#pic6{
+    grid-column-start: 2;
     grid-column-end: 4;
 }
 
+/* Images cover the entire space they are occupying. */
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Display inline-block so that the icons appear in a row. */
 #icons li{
     display: inline-block;
     cursor: pointer;
 }
 
+/* Selector for the icons. Adding some border and spacing. */
 .fab{
   border: 1px solid black;
-  border-radius: 50px;
+  border-radius: 15px;
   font-size: 20px;
   padding: 15px;
+  transition: 1s ease;
 }
 
+/* When you hover on the items, the color changes and it scales them up. */
 .fab:hover{
-  background-color: #f6f6f6;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .fa-facebook:hover{
-  color:#3b5998;
+  background-color:#3b5998;
 }
 
 .fa-youtube:hover{
-  color: #FF0000;
+  background-color: #FF0000;
 }
 
 .fa-snapchat:hover{
-  color: #FFFC00;
+  background-color: #FFFC00;
 }
 
 .fa-twitter:hover{
-  color: #0084b4;
+  background-color: #0084b4;
 }
 
 .fa-instagram:hover{
-  color: pink;
+  background-color: pink;
 }
 
 #icons ul{
@@ -148,6 +176,7 @@ img {
   margin-right: 30px;
 }
 
+/* Basic spacing styling for the footer section. */
 #copyright{
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -169,68 +198,53 @@ img {
   background-color: white;
 }
 
+/* Button styling for the main button on the page. */
 button{
-  background:;
-  color:black;
+  background-color: black;
+  color:white;
   border:none;
-  position:relative;
   height:60px;
-  font-size:1.6em;
-  padding:0 2em;
+  font-size:20px;
+  padding:0px 40px;
   cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
+  transition:.5s ease;
   margin-top: 20px;
 }
+
+/* When button is hovered over. */
 button:hover{
-  background:black;
-  color:white;
-}
-button:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: white;
-  transition:400ms ease all;
-}
-button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-button:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
+  background-color: white;
+  color:black;
+  border: 5px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
-.navbar a {
+/* Color of the navbar links and getting rid of any decorations. */
+a {
   text-decoration: none;
   color: black;
 }
 
-.navbar a:visited {text-decoration: none;
-color: black;}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-
-
+/* Media query for transitioning navbar to mobile view. */
 @media only screen and (max-width: 768px) {
   .navbarItems,
   .navbar {
     flex-direction: column;
   }
+
 .navbarItems {
     display:none;
   }
-.navbarItems-right {
-    margin-left:0;
-  }
+
 .navbarToggleShow {
     display: flex;
   }
+
 .navbarLink-toggle {
     align-self: flex-end;
     display: initial;
@@ -238,8 +252,13 @@ color: black;}
     cursor: pointer;
    }
 
+   .mobileNav{
+     margin: 10px;
+     text-align: center;
+   }
 }
 
+/* Another media query to get rid of CSS grid and display the photos in a mobile view. */
 @media only screen and (max-width: 600px) {
   #photos{
     display: block;
