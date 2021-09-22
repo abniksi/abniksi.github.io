@@ -1,0 +1,131 @@
+/* Importing a Google font */
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+/* Setting margin for entire page */
+*{
+    margin: 0 auto;
+}
+
+/* Setting background image for the body  */
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adding display flex to form and padding */
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Aligning h2 and adding padding */
+h2{
+    text-align: center;
+    padding: 5px;
+}
+
+/* Setting width, margin, and color for container ID */
+#container{
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Adding display flex and setting height and width for centerContainer ID */
+#centerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+/* Setting width and height */
+input{
+    width: 80%;
+    height: 40px;
+}
+
+/* Setting color, height, width, and border */
+button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+/* Styling the navbar and a element */
+nav{
+    color: white;
+    margin: 0 auto;
+  }
+  
+  a{
+    color: white;
+  }
+  
+  a:hover{
+    color: white;
+  }
+  
+  ul{
+    padding-top: 20px;
+  }
+  
+  /* Floating navbar links to the right and left */
+  .right{
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: .25s ease;
+  }
+  
+  .left{
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+  }
+
+  .right:hover{
+    border-bottom: 2px solid white;
+  }
+  
+  li{
+    display: inline-block;
+  }
+
+
+h4{
+    text-align: center;
+}
+
+/* Setting the position of my footer icons */
+footer{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  /* Styling the icons */
+  .fab{
+    margin: 10px;
+    font-size: 22px;
+    transition: 1s ease;
+    cursor: pointer;
+  }
+  
+  .fab:hover{
+    transform: scale(1.3);
+  }
+
+  .fas{
+    color: gold;
+    margin-left: 10px;
+}

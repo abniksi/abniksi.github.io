@@ -1,0 +1,116 @@
+/* Importing a Google font */
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+/* Setting margins for entire page */
+*{
+    margin: 0 auto;
+}
+
+/* Setting width and height for head section */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(https://images.unsplash.com/photo-1533923156502-be31530547c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adding display flex to section */
+section{
+  color: white;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Navbar stylings */
+nav{
+  color: white;
+  margin: 0 auto;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
+
+ul{
+  padding-top: 20px;
+}
+
+
+.right{
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.left{
+  font-family: 'Righteous', cursive;
+  cursor: pointer;
+}
+
+/* Footer basic styling */
+footer{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Adding colors and font sizes to all the icons on the page */
+.fab{
+  margin: 10px;
+  font-size: 22px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.fab:hover{
+  transform: scale(1.3);
+}
+
+.fas{
+  color: gold;
+  margin-left: 10px;
+}
+
+.right:hover{
+  border-bottom: 2px solid white;
+}
+
+li{
+  display: inline-block;
+}
+
+/* Information ID. Adding a new font and width. */
+#information{
+  width: 80%;
+}
+
+#information h1{
+  font-family: 'Righteous', cursive;
+}
+
+/* Setting colors, border, transition for the button */
+button{
+  background: black;
+  border: 1px solid white;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
+  transition: 1s ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px white;
+}
